@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
--- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>er", vim.cmd.TroubleToggle)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>rr", vim.cmd.TroubleToggle)
 
 vim.keymap.set("n", "x", '"_x')
 
@@ -54,7 +54,7 @@ vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
 
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
-vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
