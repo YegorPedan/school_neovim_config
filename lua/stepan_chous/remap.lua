@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>rr", vim.cmd.TroubleToggle)
 
 vim.keymap.set("n", "x", '"_x')
@@ -36,7 +35,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>cc", "<cmd>!gcc -Wall -Wextra % -o %:r.out -std=c11 -g -O0<CR>")
-vim.keymap.set("n", "<leader>rp", "<cmd>!./%:r.out<CR>")
+vim.keymap.set("n", "<leader>rp", "<cmd>!%:r.out<CR>")
 
 vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
