@@ -15,6 +15,7 @@ null_ls.setup({
 	-- setup formatters & linters
 	sources = {
 		formatting.clang_format,
+		formatting.autopep8,
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
